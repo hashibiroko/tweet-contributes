@@ -4,6 +4,7 @@
   "description": "tweet 1day contributes",
   "main": "lambda.js",
   "scripts": {
+    "zip": "zip -r tweet-contributes.zip lambda.js node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
