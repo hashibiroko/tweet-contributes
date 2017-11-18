@@ -2,7 +2,7 @@
   "name": "tweet-contributes",
   "version": "1.0.0",
   "description": "tweet 1day contributes",
-  "main": "index.js",
+  "main": "lambda.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,8 @@
     "url": "https://github.com/hashibiroko/tweet-contributes.git"
   },
   "author": "hashibiroko",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
 }
