@@ -23,11 +23,6 @@ exports.handler = (event, context, callback) => {
         let yesterday = res[res.length - 2]["count"];
         let counts = res.map(value => Number(value["count"]));
         let lastYear = counts.reduce((prev, value) => prev + value);
-
-        console.log("public contributes");
-        console.log(`yesterday: ${yesterday["count"]}`);
-        console.log(`last year: ${lastYear}`);
-
         let text = `【コントリビュート定期 : ${userName}】`;
         text += `\n　昨日は、${yesterday} 回だったよ`;
         text += `\n　年間合計は、${lastYear} 回になったよ`;
